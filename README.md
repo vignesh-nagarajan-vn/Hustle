@@ -40,23 +40,3 @@
     ```
 
 5. Open the app in your browser at `http://127.0.0.1:5000/`.
-
-## Project Structure
-
-HUSTLE/
-│
-├── app.py                # Main Flask application
-├── upload.py             # Resume upload and processing logic
-├── scanner.py            # Text extraction and job matching logic
-├── templates/            # HTML templates for the web pages
-│   ├── home.html
-│   ├── upload.html
-│   ├── web_developer.html
-│   └── scriptwriter.html
-├── static/               # Static files (CSS, images, etc.)
-├── uploads/              # Uploaded resume files (generated)
-├── venv/                 # Virtual environment folder (generated)
-├── requirements.txt      # Python dependencies
-└── README.md             # This README file
-
-
