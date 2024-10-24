@@ -1,18 +1,19 @@
 # Side Hustle Matcher
 
-**Side Hustle Matcher** is a web application that helps users find the best side hustle opportunities based on their resume. By uploading their resume, users can get matched with relevant job descriptions using NLP techniques like cosine similarity.
+**HUSTLE** is a flask web application that helps users find the best side hustle opportunities based on their resume. By uploading their resume, users can get matched with a relevant, specific side hustle and recieve a job on a freelancing site, like Fiverr or Upwork, that they can started on immediately.
 
 ## Features
 
-- **Resume Upload:** Upload your resume in PDF or DOCX format.
-- **Job Matching:** Automatically find side hustles that best match your resume using cosine similarity.
-- **Cosine Similarity Algorithm:** The application uses NLP to compare resumes with job descriptions, finding the best match based on the context and terminology.
+- **Resume Upload:** Upload your resume in PDF, DOCX or txt format and recieve a personalized side hustle
+- **Side Hustle Database:** Browse and filter through a vast databse of detailed side hustle
+- **Job Matching:** Recieve a job that you can get started on immediately based on the skills and experiences mentioned in your resume
 
 ## How to Run the Project
 
 ### Prerequisites
 - Python 3.x
 - Virtual Environment (venv)
+- VSCode
 
 ### Installation Steps
 1. Clone the repository:
@@ -22,7 +23,10 @@
 2. Create and activate a virtual environment:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # For Windows use `venv\Scripts\activate`
+    # For Mac or Linux OS
+    source venv/bin/activate
+    # For Windows
+    venv\Scripts\activate
     ```
 
 3. Install the dependencies:
@@ -38,4 +42,21 @@
 5. Open the app in your browser at `http://127.0.0.1:5000/`.
 
 ## Project Structure
+
+HUSTLE/
+│
+├── app.py                # Main Flask application
+├── upload.py             # Resume upload and processing logic
+├── scanner.py            # Text extraction and job matching logic
+├── templates/            # HTML templates for the web pages
+│   ├── home.html
+│   ├── upload.html
+│   ├── web_developer.html
+│   └── scriptwriter.html
+├── static/               # Static files (CSS, images, etc.)
+├── uploads/              # Uploaded resume files (generated)
+├── venv/                 # Virtual environment folder (generated)
+├── requirements.txt      # Python dependencies
+└── README.md             # This README file
+
 
