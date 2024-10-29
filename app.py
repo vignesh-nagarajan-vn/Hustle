@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for
 import os
-from scanner import process_resume
+from resume_scanner.scanner import process_resume
 
 app = Flask(__name__)
 
@@ -61,6 +61,11 @@ def web_developer():
 @app.route('/scriptwriter')
 def scriptwriter():
     return render_template('side_hustle_listings/scriptwriter.html')
+
+@app.route('/prompt_engineer')
+def prompt_engineer():
+    return render_template('side_hustle_listings/prompt_engineer.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
