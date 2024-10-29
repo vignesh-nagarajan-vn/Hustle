@@ -1,6 +1,6 @@
-import docx
+import docx as python_docx
 from PyPDF2 import PdfReader
-import PyPDF2
+
 
 # Side hustle dictionary
 side_hustles = {
@@ -25,7 +25,7 @@ side_hustles = {
 # Returns text if uploaded file extension is .docx
 def process_docx(file_path):
     try:
-        doc = docx.Document(file_path)
+        doc = python_docx.Document(file_path)
         text = "\n".join([para.text for para in doc.paragraphs])
         return text
     except Exception as e:
