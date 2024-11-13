@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Taker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-link {
+            font-weight: bold;
+            color: #292929;
+            font-size: 14px;
+            text-decoration: none;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #FF3F00;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .main-content {
+            margin-top: 120px;
+        }
+
+        .result-container {
+            background-color: #ffffff;
+            padding: 60px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d4eaff;
+        }
+
+        .result-container h4 {
+            font-weight: bold;
+            color: #FF3F00;
+            margin-top: -30px;
+            font-size: 2.0rem;
+        }
+
+        .result-container p {
+            font-size: 1rem;
+            color: #000000;
+            font-weight: 450;
+            margin-bottom: 15px;
+        }
+
+        .categories span {
+            display: inline-block;
+            background-color: #f3b8b8;
+            color: #ff2600;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-right: 10px;
+        }
+
+        .orange-bar {
+            height: 4px;
+            background-color: #FF3F00;
+            width: 100%;
+            position: relative;
+            top: 6.5vh;
+            margin-top: 10px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 2px;
+            left: 10px;
+            width: 35px;
+            height: 35px;
+        }
+
+        .hustle-branding {
+            position: absolute;
+            top: 0px;
+            left: 50px;
+            font-size: 24px;
+            font-weight: 650;
+            color: #fc5f2b;
+        }
+
+        .social-icon {
+            position: absolute;
+            top: 8px;
+            width: 28px;
+            height: 28px;
+        }
+
+        .visit-link {
+            background-color: #FF3F00;
+            color: #FFFFFF;
+            border: none;
+            font-weight: bold;
+            padding: 5px 15px;
+            font-size: 1rem;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .visit-link:hover {
+            background-color: #D83600;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    
+    <!-- Orange Line -->
+    <div class="orange-bar"></div>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='Logo.png') }}" alt="Custom Image" class="logo">
+
+    <!-- HUSTLE Branding -->
+    <span class="hustle-branding">HUSTLE</span>
+
+    <!-- LinkedIn Icon -->
+    <a href="https://www.linkedin.com/company/side-hustle-matcher/?viewAsMember=true" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon" style="right: 20px;">
+    </a>
+
+    <!-- GitHub Icon -->
+    <a href="https://github.com/Raghavsk24/HUSTLE" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" class="social-icon" style="right: 60px;">
+    </a>
+
+    <!-- Nav Links -->
+    <a href="/database" class="nav-link" style="position: absolute; top: 6px; right: 90px;">Access Database</a>
+    <a href="/upload" class="nav-link" style="position: absolute; top: 6px; right: 210px;">Upload Resume</a>
+    <a href="/" class="nav-link" style="position: absolute; top: 6px; right: 330px;">Home</a>
+
+    <!-- Survey Taker Card -->
+    <div class="container main-content">
+        <div class="result-container">
+            <div class="row">
+                <div class="col-md-9 d-flex flex-column">
+                    <h4>Survey Taker</h4>
+                    <p>
+                        As a Survey Taker, you'll complete online surveys that gather consumer opinions for market research. This flexible side hustle can be done anytime and anywhere.
+                    </p>
+
+                    <!-- Skills section -->
+                    <p class="skills-header" style="font-weight: bold;">Skills a Survey Taker Needs:</p>
+                    <ul class="skills-list" style="color: #313131; margin-top: -10px">
+                        <li>Attention to detail for accurate responses.</li>
+                        <li>Honesty and reliability to maintain credibility.</li>
+                        <li>Basic internet skills to navigate survey platforms.</li>
+                        <li>Time management to complete multiple surveys efficiently.</li>
+                        <li>Patience for some longer surveys.</li>
+                        <li>Comfort with repetitive tasks to stay motivated.</li>
+                        <li>Basic demographic knowledge to match survey criteria.</li>
+                    </ul>
+
+                    <!-- How to Get Started section -->
+                    <div class="how-to-start-section">
+                        <h6 style="font-weight: bold; color:#000000">How to Get Started as a Survey Taker:</h6>
+                        <p style="color: #313131;">
+                            Register on survey sites like Swagbucks, Survey Junkie, or Pinecone Research, where you can earn cash or gift cards for completing surveys. Make sure to complete your profile fully so you’re matched with relevant surveys. Set aside small blocks of time to complete surveys daily, as they can fill up quickly. Keep an eye out for higher-paying surveys based on your demographics. This is a low-effort side hustle that’s easy to fit in around classes or studying.
+                        </p>
+                    </div>
+
+                    <!-- Categories under the description -->
+                    <div class="categories mt-auto">
+                        <span>Customer Service</span>
+                        <span style="background-color: #79f5a8; color: #086925;">$500 annually</span>
+                        <span style="background-color: #8ac5f5; color: #001aff;">1-5 hrs/week</span>
+                        <span style="background-color: #f0f883; color: #78800a;">Freelance</span>
+                    </div>
+                </div>
+
+                <!-- Sidebar for icon and "Back to Database" button -->
+                <div class="col-md-3 d-flex flex-column align-items-center justify-content-start">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2088/2088617.png" alt="Survey Icon" style="width: 100px; height: 100px; margin-top: -20px; margin-right: -40px">
+                    <a href="{{ url_for('database') }}" class="visit-link mt-3" style="border-radius: 10px; margin-right: -40px">Back to Database</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
