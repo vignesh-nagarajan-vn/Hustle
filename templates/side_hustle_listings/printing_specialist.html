@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Taker</title>
+    <title>3D Printing Specialist</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .nav-link {
@@ -41,7 +41,7 @@
         .result-container h4 {
             font-weight: bold;
             color: #FF3F00;
-            margin-top: -30px;
+            margin-top: -10px;
             font-size: 2.0rem;
         }
 
@@ -60,15 +60,6 @@
             border-radius: 5px;
             font-size: 0.9rem;
             margin-right: 10px;
-        }
-
-        .orange-bar {
-            height: 4px;
-            background-color: #FF3F00;
-            width: 100%;
-            position: relative;
-            top: 6.5vh;
-            margin-top: 10px;
         }
 
         .logo {
@@ -91,6 +82,7 @@
         .social-icon {
             position: absolute;
             top: 8px;
+            right: 20px;
             width: 28px;
             height: 28px;
         }
@@ -101,25 +93,31 @@
             border: none;
             font-weight: bold;
             padding: 5px 15px;
-            font-size: 1rem;
+            font-size: 1.0rem;
             margin-top: 15px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            border-radius: 10px;
         }
 
         .visit-link:hover {
             background-color: #D83600;
+        }
+
+        .skills-list {
+            font-size: 1rem;
+            color: #313131;
+            line-height: 1.6;
+            margin-left: 20px;
         }
     </style>
 </head>
 
 <body>
     <!--Nav Bar-->
-    
+
     <!-- Orange Line -->
-    <div class="orange-bar"></div>
+    <div style="height: 5px; background-color: #FF3F00; position: relative; top: 6.0vh; width: 100%;"></div>
 
     <!-- Logo -->
     <img src="{{ url_for('static', filename='Logo.png') }}" alt="Custom Image" class="logo">
@@ -142,49 +140,51 @@
     <a href="/upload" class="nav-link" style="position: absolute; top: 6px; right: 210px;">Upload Resume</a>
     <a href="/" class="nav-link" style="position: absolute; top: 6px; right: 330px;">Home</a>
 
-    <!-- Survey Taker Card -->
+    <!-- 3D Printing Specialist Card -->
     <div class="container main-content">
         <div class="result-container">
             <div class="row">
+                <!-- Main content column for title, description, skills, and new section -->
                 <div class="col-md-9 d-flex flex-column">
-                    <h4>Survey Taker</h4>
+                    <h4>3D Printing Specialist</h4>
                     <p>
-                        Survey Takers share their opinions on products and services, helping companies better understand consumer needs. This side hustle involves completing online surveys, offering a flexible way to earn extra income or rewards in your spare time. It’s easy to start and requires only basic internet skills, making it ideal for fitting around classes or other commitments.
+                        As a 3D Printing Specialist, you'll create physical objects from digital designs using 3D printers. You'll work with CAD models to produce prototypes, parts, or artistic creations for various applications.
                     </p>
 
-
                     <!-- Skills section -->
-                    <p class="skills-header" style="font-weight: bold;">Skills a Survey Taker Needs:</p>
-                    <ul class="skills-list" style="color: #313131; margin-top: -10px">
-                        <li>Attention to detail for accurate responses.</li>
-                        <li>Honesty and reliability to maintain credibility.</li>
-                        <li>Basic internet skills to navigate survey platforms.</li>
-                        <li>Time management to complete multiple surveys efficiently.</li>
-                        <li>Patience for some longer surveys.</li>
-                        <li>Comfort with repetitive tasks to stay motivated.</li>
-                        <li>Basic demographic knowledge to match survey criteria.</li>
+                    <p class="skills-header" style="font-weight: bold;">Skills a 3D Printing Specialist Needs:</p>
+                    <ul class="skills-list" style="margin-top: -10px">
+                        <li>Proficiency in CAD software</li>
+                        <li>Understanding of 3D printing technology and materials</li>
+                        <li>Technical troubleshooting skills</li>
+                        <li>Attention to detail</li>
+                        <li>Ability to read and interpret design specifications</li>
+                        <li>Knowledge of different 3D printing methods (FDM, SLA, SLS)</li>
+                        <li>Problem-solving abilities</li>
+                        <li>Creativity for custom design projects</li>
+                        <li>Time management skills</li>
                     </ul>
 
-                    <!-- How to Get Started section -->
+                    <!-- New "How to Get Started" section as paragraph -->
                     <div class="how-to-start-section">
-                        <h6 style="font-weight: bold; color:#000000">How to Get Started as a Survey Taker:</h6>
+                        <h6 style="font-weight: bold; color:#000000">How to Get Started as a 3D Printing Specialist:</h6>
                         <p style="color: #313131;">
-                            Register on survey sites like Swagbucks, Survey Junkie, or Pinecone Research, where you can earn cash or gift cards for completing surveys. Make sure to complete your profile fully so you’re matched with relevant surveys. Set aside small blocks of time to complete surveys daily, as they can fill up quickly. Keep an eye out for higher-paying surveys based on your demographics. This is a low-effort side hustle that’s easy to fit in around classes or studying.
+                            Start by familiarizing yourself with 3D printing software and hardware. Practice designing and printing small projects to build your skills. Join online communities for 3D printing to share tips and receive feedback. Invest in or gain access to a quality 3D printer to create a portfolio of your work, showcasing different techniques and materials. Consider taking an online course in CAD software or 3D printing technology to deepen your knowledge. Networking with professionals and keeping up with industry trends will also help advance your career.
                         </p>
                     </div>
 
-                    <!-- Categories under the description -->
+                    <!-- Categories under the description, moved to the bottom -->
                     <div class="categories mt-auto">
-                        <span>Customer Service</span>
-                        <span style="background-color: #79f5a8; color: #086925;">$500 annually</span>
-                        <span style="background-color: #8ac5f5; color: #001aff;">1-5 hrs/week</span>
-                        <span style="background-color: #f0f883; color: #78800a;">Freelance</span>
+                        <span>Computers & Technology</span>
+                        <span style="background-color: #79f5a8; color: #086925;">$15,600 annually</span>
+                        <span style="background-color: #8ac5f5; color: #001aff;">1-10 hrs/week</span>
+                        <span style="background-color: #f0f883; color: #78800a;">Business Venture</span>
                     </div>
                 </div>
 
                 <!-- Sidebar for icon and "Back to Database" button -->
                 <div class="col-md-3 d-flex flex-column align-items-center justify-content-start">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2088/2088617.png" alt="Survey Icon" style="width: 100px; height: 100px; margin-top: -20px; margin-right: -40px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4841/4841317.png" alt="3D Printer Icon" style="width: 100px; height: 100px; margin-top: -20px; margin-right: -40px">
                     <a href="{{ url_for('database') }}" class="visit-link mt-3" style="border-radius: 10px; margin-right: -40px">Back to Database</a>
                 </div>
             </div>
