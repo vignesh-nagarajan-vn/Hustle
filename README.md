@@ -1,5 +1,5 @@
 # Hustle - Full Stack Website Application
-Hustle is an all-in-one web solution to finding the **perfect side hustle!** Simply upload your resume/CV, and our software will use ATS scanning to locate all the keywords within your the document and store them in a newly created database. That database is then compared to our comprehensive keyword database, with over __ entries to recommend you your ideal side hustle, as well as the resources you need to succeed within that field. These resources include a market analysis, tips sourced from industry leaders, and job postings for entry-level freelancing roles within the industry.
+Hustle is an all-in-one web solution to finding the **perfect side hustle!** Simply upload your resume/CV, and our software will use ATS scanning to locate all the keywords within your the document and store them in a newly created database. That database is then compared to our comprehensive keyword database, with 200+ skills to recommend you your ideal side hustle, as well as the resources you need to succeed within that field. These resources include a market analysis, tips sourced from industry leaders, and job postings for entry-level freelancing roles within the industry.
 
 **Software Features**
 - Resume/CV Upload (PDF and DOCX Files)
