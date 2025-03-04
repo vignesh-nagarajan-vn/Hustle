@@ -15,10 +15,11 @@ Hustle is an all-in-one web solution to finding the **perfect side hustle!** Sim
   - Received direct mentorship from Jetson's CEO (Will Rush) & CTO (Natalie Young)
   - Pitched to a live audience of 32 angel investors/VCs and ultimately secured a $3,000 award
 - Received positive feedback from 92% of interviewees during market fit analysis
+- Continued development until December 2024, culminating our work in a video demonstration
 
 
 
-## Features
+## Website Features
 
 - **Resume Upload:** Upload your resume in PDF, DOCX or txt format and recieve a personalized side hustle
 - **Side Hustle Database:** Browse and filter through a vast databse of detailed side hustle
