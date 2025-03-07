@@ -1,7 +1,7 @@
 # Hustle - Full Stack Website Application
 Hustle is an all-in-one web solution to finding the **perfect side hustle!** Simply upload your resume/CV, and our software will use ATS scanning to locate all the keywords within your the document and store them in a newly created database. That database is then compared to our comprehensive keyword database, with 200+ skills to recommend you your ideal side hustle, as well as the resources you need to succeed within that field. These resources include a market analysis, tips sourced from industry leaders, and job postings for entry-level freelancing roles within the industry.
 
-Built by Raghav Senthil Kumar & Vignesh Nagarajan. Backed by Jetson.
+Built by Raghav Senthil Kumar & Vignesh Nagarajan. Backed by [Jetson](https://www.jetson.app/).
 
 **Software Features**
 - Resume/CV Upload (PDF and DOCX Files)
@@ -59,3 +59,9 @@ Built by Raghav Senthil Kumar & Vignesh Nagarajan. Backed by Jetson.
     ```
 
 5. Open the app in your browser at `http://127.0.0.1:5000/`.
+
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. Please refer to [LICENSE](https://github.com/vignesh-nagarajan-vn/Hustle/blob/main/LICENSE) for more information.
+
